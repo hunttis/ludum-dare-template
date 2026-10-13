@@ -1,4 +1,4 @@
-# Godot 4.5 Ludum Dare Template
+# Godot 4.7 Ludum Dare Template
 
 ## Includes:
 

@@ -1,18 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8ecipthwbqmm"]
+[gd_scene format=3 uid="uid://b8ecipthwbqmm"]
 
 [ext_resource type="Script" uid="uid://c8pisr7qt6gq2" path="res://assets/scenes/menus/options.gd" id="1_26tx4"]
 
-[node name="Options" type="Node2D"]
+[node name="Options" type="Node2D" unique_id=1374062617]
 script = ExtResource("1_26tx4")
 
-[node name="OptionsContainer" type="Control" parent="."]
+[node name="OptionsContainer" type="Control" parent="." unique_id=1654882716]
 custom_minimum_size = Vector2(640, 360)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ButtonContainer" type="VBoxContainer" parent="OptionsContainer"]
+[node name="ButtonContainer" type="VBoxContainer" parent="OptionsContainer" unique_id=780550222]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -26,11 +26,11 @@ offset_bottom = 30.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MasterVolumeLabel" type="Label" parent="OptionsContainer/ButtonContainer"]
+[node name="MasterVolumeLabel" type="Label" parent="OptionsContainer/ButtonContainer" unique_id=1009612258]
 layout_mode = 2
 text = "Master volume"
 
-[node name="MasterVolumeSlider" type="HSlider" parent="OptionsContainer/ButtonContainer"]
+[node name="MasterVolumeSlider" type="HSlider" parent="OptionsContainer/ButtonContainer" unique_id=948989950]
 layout_mode = 2
 focus_neighbor_top = NodePath("../ReturnToMenuButton")
 max_value = 1.0
@@ -38,38 +38,38 @@ step = 0.2
 ticks_on_borders = true
 ticks_position = 3
 
-[node name="HSeparator2" type="HSeparator" parent="OptionsContainer/ButtonContainer"]
+[node name="HSeparator2" type="HSeparator" parent="OptionsContainer/ButtonContainer" unique_id=1134479461]
 layout_mode = 2
 
-[node name="MusicVolumeLabel" type="Label" parent="OptionsContainer/ButtonContainer"]
+[node name="MusicVolumeLabel" type="Label" parent="OptionsContainer/ButtonContainer" unique_id=803322598]
 layout_mode = 2
 text = "Music"
 
-[node name="MusicVolumeSlider" type="HSlider" parent="OptionsContainer/ButtonContainer"]
+[node name="MusicVolumeSlider" type="HSlider" parent="OptionsContainer/ButtonContainer" unique_id=877624380]
 layout_mode = 2
 max_value = 1.0
 step = 0.2
 ticks_on_borders = true
 ticks_position = 3
 
-[node name="HSeparator3" type="HSeparator" parent="OptionsContainer/ButtonContainer"]
+[node name="HSeparator3" type="HSeparator" parent="OptionsContainer/ButtonContainer" unique_id=2140255337]
 layout_mode = 2
 
-[node name="SoundVolumeLabel" type="Label" parent="OptionsContainer/ButtonContainer"]
+[node name="SoundVolumeLabel" type="Label" parent="OptionsContainer/ButtonContainer" unique_id=663103559]
 layout_mode = 2
 text = "Sounds"
 
-[node name="SoundVolumeSlider" type="HSlider" parent="OptionsContainer/ButtonContainer"]
+[node name="SoundVolumeSlider" type="HSlider" parent="OptionsContainer/ButtonContainer" unique_id=2030217588]
 layout_mode = 2
 max_value = 1.0
 step = 0.2
 ticks_on_borders = true
 ticks_position = 3
 
-[node name="HSeparator4" type="HSeparator" parent="OptionsContainer/ButtonContainer"]
+[node name="HSeparator4" type="HSeparator" parent="OptionsContainer/ButtonContainer" unique_id=1290248758]
 layout_mode = 2
 
-[node name="ReturnToMenuButton" type="Button" parent="OptionsContainer/ButtonContainer"]
+[node name="ReturnToMenuButton" type="Button" parent="OptionsContainer/ButtonContainer" unique_id=37560140]
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../MasterVolumeSlider")
 text = "Return to Menu"

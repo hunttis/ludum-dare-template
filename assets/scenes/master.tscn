@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3eo74i1aytio"]
+[gd_scene format=3 uid="uid://d3eo74i1aytio"]
 
 [ext_resource type="Script" uid="uid://mrf7v5r1ar20" path="res://assets/scenes/master.gd" id="1_xvgtq"]
 
-[node name="Master" type="Node2D"]
+[node name="Master" type="Node2D" unique_id=709675723]
 script = ExtResource("1_xvgtq")
 
-[node name="CurrentScene" type="Control" parent="."]
+[node name="CurrentScene" type="Control" parent="." unique_id=1971566596]
 custom_minimum_size = Vector2(640, 360)
 layout_mode = 3
 anchors_preset = 0

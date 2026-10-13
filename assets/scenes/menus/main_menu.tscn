@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://17qoniqtyvb4"]
+[gd_scene format=3 uid="uid://17qoniqtyvb4"]
 
 [ext_resource type="Script" uid="uid://blo50cupp2cta" path="res://assets/scenes/menus/main_menu.gd" id="1_uu6ob"]
 
-[node name="MainMenu" type="Node2D"]
+[node name="MainMenu" type="Node2D" unique_id=2144547041]
 script = ExtResource("1_uu6ob")
 
-[node name="ScreenSizeContainer" type="Control" parent="."]
+[node name="ScreenSizeContainer" type="Control" parent="." unique_id=1983318640]
 custom_minimum_size = Vector2(640, 360)
 layout_mode = 3
 anchors_preset = 0
@@ -14,7 +14,7 @@ offset_bottom = 40.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="VerticalContainer" type="VBoxContainer" parent="ScreenSizeContainer"]
+[node name="VerticalContainer" type="VBoxContainer" parent="ScreenSizeContainer" unique_id=1270244518]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,12 +22,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TopSpacer" type="Control" parent="ScreenSizeContainer/VerticalContainer"]
+[node name="TopSpacer" type="Control" parent="ScreenSizeContainer/VerticalContainer" unique_id=38018022]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
-[node name="GameTitle" type="RichTextLabel" parent="ScreenSizeContainer/VerticalContainer"]
+[node name="GameTitle" type="RichTextLabel" parent="ScreenSizeContainer/VerticalContainer" unique_id=969225757]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/normal_font_size = 64
@@ -36,16 +36,16 @@ text = "[center]Game Title[/center]"
 fit_content = true
 scroll_active = false
 
-[node name="MiddleSpacer" type="Control" parent="ScreenSizeContainer/VerticalContainer"]
+[node name="MiddleSpacer" type="Control" parent="ScreenSizeContainer/VerticalContainer" unique_id=618976484]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
-[node name="MenuButtons" type="Control" parent="ScreenSizeContainer/VerticalContainer"]
+[node name="MenuButtons" type="Control" parent="ScreenSizeContainer/VerticalContainer" unique_id=204437329]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="StartButton" type="Button" parent="ScreenSizeContainer/VerticalContainer/MenuButtons"]
+[node name="StartButton" type="Button" parent="ScreenSizeContainer/VerticalContainer/MenuButtons" unique_id=517228967]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -60,7 +60,7 @@ focus_next = NodePath("../OptionsButton")
 focus_previous = NodePath("../QuitButton")
 text = "Start"
 
-[node name="OptionsButton" type="Button" parent="ScreenSizeContainer/VerticalContainer/MenuButtons"]
+[node name="OptionsButton" type="Button" parent="ScreenSizeContainer/VerticalContainer/MenuButtons" unique_id=591116847]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -79,7 +79,7 @@ focus_next = NodePath("../QuitButton")
 focus_previous = NodePath("../StartButton")
 text = "Options"
 
-[node name="QuitButton" type="Button" parent="ScreenSizeContainer/VerticalContainer/MenuButtons"]
+[node name="QuitButton" type="Button" parent="ScreenSizeContainer/VerticalContainer/MenuButtons" unique_id=275128954]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -97,7 +97,7 @@ focus_next = NodePath("../StartButton")
 focus_previous = NodePath("../OptionsButton")
 text = "Quit"
 
-[node name="BottomSpacer" type="Control" parent="ScreenSizeContainer/VerticalContainer"]
+[node name="BottomSpacer" type="Control" parent="ScreenSizeContainer/VerticalContainer" unique_id=510074509]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
